@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sample CV</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
+    <title>阿部寛_UI/UX_石の写真集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: url(stoneimags/IMG_7394.JPG);
+            padding: 100px;
+            text-align: center;
+            background-size:cover ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-  <body>
-    <div class="wrapper">
-
-      <!-- 画像 -->
-      <div id="card">
-        <img src="./images/card.jpg" alt="カード">
-      </div>
-
-      <!-- 個人情報なので注意 -->
-      <div class="profile">
-        <h2 class="title">name</h2>
-        <h1 class="name">山田一郎</h1>
-
-        <h2 class="title">history</h2>
-        <ul class="history_list">
-          <li><div class="year">2000</div><div class="txt">〇〇県生まれ</div></li>
-          <li><div class="year">20XX</div><div class="txt">高校卒業</div></li>
-          <li><div class="year">20XX</div><div class="txt">文章が2行に渡る場合うまく収まるかをテストするために長い文章を書いてみるなど</div></li>
-          <li><div class="year">現在</div><div>在学中</div></li>
-        </ul>
-
-        <h2 class="title">link</h2>
-        <div>
-          好きなサイト：<a href="https://google.com" target="_blank">グーグル</a>
-        </div>
-
-      </div>
-
+        }
+        .header h1 {
+            color: black;  /* 文字色を白に変更 */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;  /* 文字サイズを大きく設定 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.);  /* 文字に影を追加 */
+            margin: 0;
+        }
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .content img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>石の写真集in鴨川デルタ</h1>
     </div>
-  </body>
+    
+    <div class="content">
+        <h2>鴨川デルタで撮影した積み石の写真集</h2>
+        <p></p>
+        <img src="IMG_7393.JPG" alt="石の写真">
+        <button class="button" onclick="alert('こんにちは！')">クリックして挨拶</button>
+    </div>
 
+    <script>
+        // 追加のJavaScript機能
+        document.querySelector(".button").addEventListener("click", function() {
+            alert("クリックありがとうございます！");
+        });
+    </script>
+</body>
 </html>
