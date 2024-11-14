@@ -12,21 +12,23 @@
             padding: 0;
         }
         .header {
-            background-color: url(stoneimags/IMG_7394.JPG);
+            background-image: url(stoneimags/IMG_7394.JPG);
             padding: 100px;
-            text-align: center;
-            background-size:cover ;
+            text-align: left;
+            background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            position: relative; /* 画像の上に文字を配置できるようにする */
         }
         .header h1 {
-            color: black;  /* 文字色を白に変更 */
+            color: black;  /* 文字色を変更 */
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 3em;  /* 文字サイズを大きく設定 */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.);  /* 文字に影を追加 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* 文字に影を追加 */
             margin: 0;
+            position: absolute; /* 文字を親要素から絶対位置に配置 */
+            text-align: center; /* 中央揃え */
         }
         .content {
             text-align: center;
@@ -35,6 +37,8 @@
         .content img {
             width: 200px;
             border-radius: 10px;
+            margin-left: 20px;  /* 左側に余白を追加 */
+            float: left; /* 画像を左に寄せる */
         }
         .button {
             margin-top: 20px;
@@ -56,9 +60,12 @@
     
     <div class="content">
         <h2>鴨川デルタで撮影した積み石の写真集</h2>
-        <p></p>
-        <img src="stoneimages/IMG_7401.jpg" >
-        <button class="button" onclick="alert('こんにちは！')">クリックして挨拶</button>
+        <p>京都芸術大学のクロステックデザインコースの<br>前期授業UI/UX論の成果物として石の写真集を目的として<br>
+            石の写真を鴨川デルタで撮影しました。<br>
+            立体の石を面で感じることを目的としたので<br>
+            石の面を意識した写真を撮影しました</p>
+            <img src="stoneimages/IMG_7410.JPG" style="width: 500px; height: auto; position: relative; top: 20px;" alt="積み石の写真">
+            <button class="button" onclick="alert('こんにちは！')">クリックして挨拶</button>            
     </div>
 
     <script>
