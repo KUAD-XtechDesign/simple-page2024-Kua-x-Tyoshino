@@ -36,7 +36,7 @@
             text-align: 0px
         }
         .content h2 {
-            position: fixed;
+            position: center;
             top: 150px;  /* スクロールに関係なく画面に固定 */
             width: 100%;
             text-align: center;
@@ -49,7 +49,6 @@
             float: left; /* 画像を左に寄せる */
         }
         .button {
-            position: center;
             margin-top: 20px;
             padding: 10px 20px;
             background-color: #4CAF50;
@@ -69,21 +68,21 @@
     </div>
     
     <div class="content">
-        <h2>鴨川デルタで撮影した積み石の写真集</h2>
-        <p>京都芸術大学のクロステックデザインコースの<br>前期授業UI/UX論の成果物として石の写真集を目的として<br>
-            石の写真を鴨川デルタで撮影しました。<br>
-            立体の石を面で感じることを目的としたので<br>
-            石の面を意識した写真を撮影しました</p>
+        <h2>鴨川デルタで撮影した積み石の写真集
+        <p>京都芸術大学のクロステックデザインコースの<br>前期授業UI/UX論の成果物として<br>石の写真集を制作しました。<br>
+            石の平面的な部分を撮影し<br>
+            立体の石を面で感じることを目指し<br>
+            写真を撮影しました</p>
             <img src="stoneimages/IMG_7410.JPG" style="width: 450px; height: auto; " alt="積み石の写真">
+        </h2>  
+    
+        <button class="button" onclick="window.open('https://drive.google.com/drive/folders/1crZcqFFvp_btTmOvp2oLr49G220fXnWY?usp=sharing', '_blank')">ここからご覧ください</button>
 
-            <button class="button" onclick="alert('こんにちは！')">クリックして挨拶</button>            
-    </div>
-
-    <script>
-        // 追加のJavaScript機能
-        document.querySelector(".button").addEventListener("click", function() {
-            alert("こちらからご覧ください！");
-        });
-    </script>
-</body>
-</html>
+        <script>
+            // 追加のJavaScript機能
+            document.querySelector(".button").addEventListener("click", function() {
+                alert("ありがとうございます！");
+            });
+        </script>
+    </body>
+    </html>
