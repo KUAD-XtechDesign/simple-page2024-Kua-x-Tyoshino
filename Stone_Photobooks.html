@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>阿部寛_UI/UX_石の写真集</title>
+    <title>UI/UX_石の写真集</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
+            margin: 10;
             padding: 0;
         }
         .header {
@@ -32,15 +32,24 @@
         }
         .content {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 0px;
+            text-align: 0px
+        }
+        .content h2 {
+            position: fixed;
+            top: 150px;  /* スクロールに関係なく画面に固定 */
+            width: 100%;
+            text-align: center;
+            z-index: 10;  /* 他の要素より前に表示 */
         }
         .content img {
-            width: 200px;
+            width: 0px;
             border-radius: 10px;
-            margin-left: 20px;  /* 左側に余白を追加 */
+            margin-left: 10px;  /* 左側に余白を追加 */
             float: left; /* 画像を左に寄せる */
         }
         .button {
+            position: center;
             margin-top: 20px;
             padding: 10px 20px;
             background-color: #4CAF50;
@@ -56,6 +65,7 @@
 <body>
     <div class="header">
         <h1>石の写真集in鴨川デルタ</h1>
+        
     </div>
     
     <div class="content">
@@ -64,14 +74,15 @@
             石の写真を鴨川デルタで撮影しました。<br>
             立体の石を面で感じることを目的としたので<br>
             石の面を意識した写真を撮影しました</p>
-            <img src="stoneimages/IMG_7410.JPG" style="width: 500px; height: auto; position: relative; top: 20px;" alt="積み石の写真">
+            <img src="stoneimages/IMG_7410.JPG" style="width: 450px; height: auto; " alt="積み石の写真">
+
             <button class="button" onclick="alert('こんにちは！')">クリックして挨拶</button>            
     </div>
 
     <script>
         // 追加のJavaScript機能
         document.querySelector(".button").addEventListener("click", function() {
-            alert("クリックありがとうございます！");
+            alert("こちらからご覧ください！");
         });
     </script>
 </body>
