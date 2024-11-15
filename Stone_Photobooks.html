@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX_石の写真集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 10;
+            padding: 0;
+        }
+        .header {
+            background-image: url(stoneimags/IMG_7394.JPG);
+            padding: 100px;
+            text-align: left;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative; /* 画像の上に文字を配置できるようにする */
+        }
+        .header h1 {
+            color: black;  /* 文字色を変更 */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;  /* 文字サイズを大きく設定 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* 文字に影を追加 */
+            margin: 0;
+            position: absolute; /* 文字を親要素から絶対位置に配置 */
+            text-align: center; /* 中央揃え */
+        }
+        .content {
+            text-align: center;
+            margin-top: 0px;
+            text-align: 0px
+        }
+        .content h2 {
+            position: center;
+            top: 150px;  /* スクロールに関係なく画面に固定 */
+            width: 100%;
+            text-align: center;
+            z-index: 10;  /* 他の要素より前に表示 */
+        }
+        .content img {
+            width: 0px;
+            border-radius: 10px;
+            margin-left: 10px;  /* 左側に余白を追加 */
+            float: left; /* 画像を左に寄せる */
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>石の写真集in鴨川デルタ</h1>
+        
+    </div>
+    
+    <div class="content">
+        <h2>鴨川デルタで撮影した積み石の写真集
+        <p>京都芸術大学のクロステックデザインコースの<br>前期授業UI/UX論の成果物として<br>石の写真集を制作しました。<br>
+            石の平面的な部分を撮影し<br>
+            立体の石を面で感じることを目指し<br>
+            写真を撮影しました</p>
+            <img src="stoneimages/IMG_7410.JPG" style="width: 450px; height: auto; " alt="積み石の写真">
+        </h2>  
+    
+        <button class="button" onclick="window.open('https://drive.google.com/drive/folders/1crZcqFFvp_btTmOvp2oLr49G220fXnWY?usp=sharing', '_blank')">ここからご覧ください</button>
+
+        <script>
+            // 追加のJavaScript機能
+            document.querySelector(".button").addEventListener("click", function() {
+                alert("ありがとうございます！");
+            });
+        </script>
+    </body>
+    </html>
